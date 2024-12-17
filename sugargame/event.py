@@ -40,8 +40,8 @@ class Translator(object):
         'Control_R': pygame.K_RCTRL,
         'Shift_L': pygame.K_LSHIFT,
         'Shift_R': pygame.K_RSHIFT,
-        'Super_L': pygame.K_LSUPER,
-        'Super_R': pygame.K_RSUPER,
+        'Super_L': pygame.K_LMETA,  
+        'Super_R': pygame.K_RMETA,  
         'KP_Page_Up': pygame.K_KP9,
         'KP_Page_Down': pygame.K_KP3,
         'KP_End': pygame.K_KP1,
@@ -52,7 +52,6 @@ class Translator(object):
         'KP_Right': pygame.K_KP6,
         'KP_Next': pygame.K_KP3,
         'KP_Begin': pygame.K_KP5,
-
     }
 
     mod_map = {
@@ -75,7 +74,6 @@ class Translator(object):
         pygame.K_QUOTEDBL,
         pygame.K_HASH,
         pygame.K_DOLLAR,
-        pygame.K_PERCENT,
         pygame.K_AMPERSAND,
         pygame.K_QUOTE,
         pygame.K_LEFTPAREN,
@@ -150,8 +148,7 @@ class Translator(object):
         pygame.K_F11,
         pygame.K_F12,
         pygame.K_PRINT,
-        pygame.K_SCROLLOCK,
-        pygame.K_BREAK,
+        pygame.K_PAUSE,
         pygame.K_INSERT,
         pygame.K_HOME,
         pygame.K_PAGEUP,
@@ -178,28 +175,16 @@ class Translator(object):
         pygame.K_KP9,
         pygame.K_KP0,
         pygame.K_KP_PERIOD,
-        pygame.K_POWER,
-        pygame.K_KP_EQUALS,
-        pygame.K_F13,
-        pygame.K_F14,
-        pygame.K_F15,
-        pygame.K_HELP,
-        pygame.K_MENU,
-        pygame.K_SYSREQ,
-        pygame.K_CLEAR,
-        pygame.K_CURRENCYUNIT,
-        pygame.K_CURRENCYSUBUNIT,
         pygame.K_LCTRL,
         pygame.K_LSHIFT,
         pygame.K_LALT,
-        pygame.K_LMETA,
+        pygame.K_LMETA,  
         pygame.K_RCTRL,
         pygame.K_RSHIFT,
         pygame.K_RALT,
-        pygame.K_RMETA,
-        pygame.K_MODE,
-        pygame.K_AC_BACK
+        pygame.K_RMETA,  
     ]
+
 
     def __init__(self, activity, inner_evb):
         """Initialise the Translator with the windows to which to listen"""
